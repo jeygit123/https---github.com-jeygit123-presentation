@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css ">
+    <script src="index.js"></script>
+
+    <title>Guess the Number!</title>
+</head>
+<body>
+    
+    <!-- Guess The Number! -->
+    <!-- <table border="1"> -->
+        <h3 class="tableCap">
+               Guess the Number!
+        </h3>
+
+        <!-- Lucky Number Guess Table -->
+        <div class="container">  
+            <h3>I am Thinking of a number Between 1-100.</h3>  
+            <h3>Can you Guess it </h3>  
+              <input type="number"  id="guessedNumber"><br>  
+              <button onclick="checkNumber()">GUESS</button>  
+               No.of Attempts:<span id="counter"> 0</span>               
+        </div>  
+        <!-- <tr>
+            <td>
+                <p>
+                    Guess My Lucky Number:
+                </p>
+            </td>
+            <td>
+                <input type="number" id="guessedNumber">
+            </td>
+            <td>
+                <button onclick="checkNumber()">Check</button>
+            </td>
+            <td>
+                Guess Count: <span id="counter">0</span>
+            </td>
+        </tr> -->
+
+        <!-- Hidden Responses to Guesses -->
+        <div>
+            <div class="hide" id="hiddenCorrect">
+                <h3>Correct! That is my lucky number!</h3>
+            </div>
+            
+            <div class="hide" id="hiddenWrong">
+                <h3>Your Guess is too Low!!</h3>
+                <!-- <h3>Wrong! That is NOT my lucky number!</h3> -->
+            </div>
+
+            <div class="hide" id="hiddenHigh">
+                <h3>Your Guess is too High!!</h3>
+                <!-- <h3>Wrong! That is NOT my lucky number!</h3> -->
+            </div>
+    
+            <div class="hide" id="hiddenBadNumber">
+                <h3>Please enter a number between 1 and 10</h3>
+            </div>
+        </div>
+
+    <!-- </table> -->
+
+</body>
+</html>
